@@ -1,0 +1,65 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body{
+    background-color: rgb(244, 234, 219);
+}
+
+.box-container {
+    display: flex;
+    width: 90%;
+    gap: 1cm; /* Adds 1cm space between both divs */
+}
+.input-box {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.text-area {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    resize: none;
+    background-color: rgb(183, 183, 241); /* Blue background */
+    color: white; /* White text */
+}
+
+.output-box {
+    background-color: rgb(210, 225, 231);
+    color: black;
+}
+
+.box {
+    flex: 1;
+    height: 90vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarges the div on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.input-box textarea {
+    width: 90%;
+    height: 80%;
+    font-size: 16px;
+}
+
