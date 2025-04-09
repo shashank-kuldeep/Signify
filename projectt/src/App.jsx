@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import './Home.css';
 import './App.css';
  // Importing the external CSS file
@@ -6,8 +6,9 @@ import Header from './Header.jsx';
 
 const App = () => {
     const [started, setStarted] = useState(false);
+    const [splitit, setSplitit] = useState(" ");
     const [text, setText] = useState('');
-
+    console.log(text);
     return (
         <div>
             <Header />
